@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Implicit.ImplicitActivity"
     android:id="@+id/cl_layer1"
     android:background="@color/primary">
 
@@ -15,7 +15,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/home"
+        android:text="Implicit Screen"
         android:textColor="@color/white"
         android:textSize="28dp"
         android:textStyle="bold"
@@ -35,47 +35,48 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            tools:layout_editor_absoluteX="-99dp"
-            tools:layout_editor_absoluteY="136dp">
+            tools:layout_editor_absoluteX="-36dp"
+            tools:layout_editor_absoluteY="49dp">
 
             <Button
-                android:id="@+id/bt_excplicit"
+                android:id="@+id/bt_url"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/black"
                 android:backgroundTintMode="add"
-                android:text="@string/excplicit" />
+                android:text="@string/url" />
 
             <Button
-                android:id="@+id/bt_implicit"
+                android:id="@+id/bt_email"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/black"
                 android:backgroundTintMode="add"
-                android:text="@string/implicit" />
+                android:text="@string/email" />
 
             <Button
-                android:id="@+id/recycle"
+                android:id="@+id/bt_poto"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/black"
                 android:backgroundTintMode="add"
-                android:text="@string/recycle" />
+                android:text="@string/poto" />
 
             <Button
+                android:id="@+id/bt_sms"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/black"
                 android:backgroundTintMode="add"
-                android:text="@string/excplicit" />
+                android:text="@string/sms" />
         </LinearLayout>
 
 

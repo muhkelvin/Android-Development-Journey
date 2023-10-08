@@ -4,4 +4,8 @@
     <string name="excplicit">Excplicit Intent</string>
     <string name="implicit">Implicit Intent</string>
     <string name="recycle">Recycle View</string>
+    <string name="url">Membuka Url</string>
+    <string name="email">Mengirim Email</string>
+    <string name="poto">Mengambil Foto</string>
+    <string name="sms">Mengirim SMS</string>
 </resources>
