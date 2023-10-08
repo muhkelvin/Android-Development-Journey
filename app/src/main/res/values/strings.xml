@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JurneyAndroidDevelopment</string>
+    <string name="home">Home Screen</string>
+    <string name="excplicit">Excplicit Intent</string>
+    <string name="implicit">Implicit Intent</string>
+    <string name="recycle">Recycle View</string>
 </resources>
