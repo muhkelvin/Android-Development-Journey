@@ -9,19 +9,14 @@ import com.example.jurneyandroiddevelopment.R
 import com.example.jurneyandroiddevelopment.databinding.FragmentHomeBinding
 import com.example.jurneyandroiddevelopment.databinding.FragmentProfileBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
 class ProfileFragment : Fragment() {
-    private lateinit var binding: FragmentProfileBinding
+    private lateinit var binding:FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentProfileBinding.inflate(inflater,container,false)
+        binding = FragmentHomeBinding.inflate(inflater,container,false)
         return binding.root
     }
 
@@ -30,5 +25,4 @@ class ProfileFragment : Fragment() {
     }
 
 
-}
 }
