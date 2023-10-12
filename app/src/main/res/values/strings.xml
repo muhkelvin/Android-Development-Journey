@@ -8,4 +8,6 @@
     <string name="email">Mengirim Email</string>
     <string name="poto">Mengambil Foto</string>
     <string name="sms">Mengirim SMS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
