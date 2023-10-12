@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.jurneyandroiddevelopment.Excplicit.ExcplicitActivity
 import com.example.jurneyandroiddevelopment.Excplicit.Student
 import com.example.jurneyandroiddevelopment.Implicit.ImplicitActivity
+import com.example.jurneyandroiddevelopment.RecycleView.RecycleActivity
 import com.example.jurneyandroiddevelopment.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +27,11 @@ class MainActivity : AppCompatActivity() {
         binding.btImplicit.setOnClickListener {
             val pindahImplicit = Intent(this@MainActivity,ImplicitActivity::class.java)
             startActivity(pindahImplicit)
+        }
+
+        binding.recycle.setOnClickListener {
+            val pindahRecycle = Intent(this@MainActivity,RecycleActivity::class.java)
+            startActivity(pindahRecycle)
         }
 
 
