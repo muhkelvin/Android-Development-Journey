@@ -9,7 +9,12 @@
         android:id="@+id/homepage"
         android:name="com.example.jurneyandroiddevelopment.NavComponent.HomeFragment"
         android:label="HomePage"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="openInbox"
+            app:argType="string"
+            android:defaultValue="default_value" />
+    </fragment>
 
     <fragment
         android:id="@+id/history"
