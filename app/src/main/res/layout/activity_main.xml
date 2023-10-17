@@ -77,6 +77,26 @@
                 android:backgroundTint="@color/black"
                 android:backgroundTintMode="add"
                 android:text="Fragment Activity" />
+
+            <Button
+                android:id="@+id/bt_navcomponent"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"
+                android:backgroundTintMode="add"
+                android:text="Navigation Components" />
+
+            <Button
+                android:id="@+id/bt_recipe"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"
+                android:backgroundTintMode="add"
+                android:text="Recive Fragment" />
         </LinearLayout>
 
 

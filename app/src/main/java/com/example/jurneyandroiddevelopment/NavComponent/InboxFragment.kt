@@ -22,6 +22,21 @@ class InboxFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val receivedData = arguments?.getString("someArgument")
+        if (receivedData != null) {
+            binding.tvInbox.text = receivedData
+        }
+
+        //cara Nerima Data Dengan SafeArg
+
+//        arguments?.let {
+//            val safearg = InboxFragmentArgs.frombundle(it)
+//            safearg.name
+//        }
+
+//        binding.tvInbox.text = safeArg.name
+
     }
 
 

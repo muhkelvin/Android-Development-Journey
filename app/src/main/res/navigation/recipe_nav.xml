@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_nav"
+    app:startDestination="@id/bankFragment">
+
+    <fragment
+        android:id="@+id/bankFragment"
+        android:name="com.example.jurneyandroiddevelopment.Recipe.BankFragment"
+        android:label="fragment_bank"
+        tools:layout="@layout/fragment_bank">
+        <action
+            android:id="@+id/action_bankFragment_to_syariahFragment"
+            app:destination="@id/syariahFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/syariahFragment"
+        android:name="com.example.jurneyandroiddevelopment.Recipe.SyariahFragment"
+        android:label="fragment_syariah"
+        tools:layout="@layout/fragment_syariah" />
+</navigation>

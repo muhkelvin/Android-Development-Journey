@@ -7,6 +7,9 @@ import com.example.jurneyandroiddevelopment.Excplicit.ExcplicitActivity
 import com.example.jurneyandroiddevelopment.Excplicit.Student
 import com.example.jurneyandroiddevelopment.Fragment.FragmentActivity
 import com.example.jurneyandroiddevelopment.Implicit.ImplicitActivity
+import com.example.jurneyandroiddevelopment.NavComponent.NavActivity
+import com.example.jurneyandroiddevelopment.Recipe.BankFragment
+import com.example.jurneyandroiddevelopment.Recipe.RecipeActivity
 import com.example.jurneyandroiddevelopment.RecycleView.RecycleActivity
 import com.example.jurneyandroiddevelopment.databinding.ActivityMainBinding
 
@@ -37,6 +40,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.btFragment.setOnClickListener {
             startActivity(Intent(this@MainActivity,FragmentActivity::class.java))
+        }
+
+        binding.btNavcomponent.setOnClickListener {
+            startActivity(Intent(this@MainActivity,NavActivity::class.java))
+        }
+
+        binding.btRecipe.setOnClickListener {
+            startActivity(Intent(this@MainActivity,RecipeActivity::class.java))
         }
 
 

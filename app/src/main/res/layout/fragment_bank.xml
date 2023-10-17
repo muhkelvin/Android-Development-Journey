@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Recipe.BankFragment"
+    android:background="@color/primary">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_transaksi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_kotak"/>
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Detail Transaksi"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="24dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_transaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_centang"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaksi Berhasil!"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="12dp"/>
+
+    </LinearLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_recipe"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ll_transaksi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:padding="16dp"
+        android:background="@drawable/rectangle_bacground"
+        >
+
+        <TextView
+            android:id="@+id/tv_kirim_dana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Kirim Dana"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_kirim_dana"
+            android:layout_marginTop="24dp"
+            tools:listitem="@layout/item_recipe"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_kembali"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cl_recipe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/buttom_rectangle"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#852884"
+        android:text="Kembali ke Homepage"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bt_kembali"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_orang"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
